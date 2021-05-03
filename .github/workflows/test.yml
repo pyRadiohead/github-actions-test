@@ -1,6 +1,6 @@
 name: Test shell commands
 
-on:
+on: [push]
 
 jobs:
   run-shell-command:

@@ -1,4 +1,15 @@
-name: Yurii
-age: 31
-address: "Ukraine: Poltava"
-active: true
+name: Test shell commands
+
+on:
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: echo "Hello world"
+      - name: multiline script
+        run: |
+          node -v
+          npm -v
+
